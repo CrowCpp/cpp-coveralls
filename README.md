@@ -15,6 +15,7 @@ Upload C/C++ coverage report to coveralls.io, Modified by CrowCpp to work for Cr
 - `COVERALLS_ENDPOINT`
 - `COVERALLS_PARALLEL`
 - `COVERALLS_SERVICE_NAME`
+- `COVERALLS_PULL_REQUEST`
 
 
 ## Usage:

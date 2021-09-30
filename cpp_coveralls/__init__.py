@@ -95,6 +95,7 @@ def run():
     args.exclude_lines_pattern.extend(yml.get('exclude_lines_pattern', []))
 
     args.service_job_id = os.environ.get('TRAVIS_JOB_ID', '')
+    args.service_pull_request = os.environ.get('COVERALLS_PULL_REQUEST', '')
 
     if args.repo_token == '' and args.service_job_id == '':
         raise ValueError("\nno coveralls.io token specified and no travis job id found\n"
