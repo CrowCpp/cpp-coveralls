@@ -106,7 +106,7 @@ def run():
     cov_report = coverage.collect(args)
     if args.verbose:
         print(cov_report)
-        print(json.dumps(coverage))
+        print(json.dumps(cov_report))
     if args.dryrun:
         return 0
     if args.dump:
