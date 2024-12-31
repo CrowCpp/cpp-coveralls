@@ -46,7 +46,7 @@ def parse_yaml_config(args):
         with open(args.coveralls_yaml, 'r') as fp:
             if not yaml:
                 raise SystemExit('PyYAML is required for parsing configuration')
-            yml = yaml.load(fp)
+            yml = yaml.safe_load(fp)
     except IOError:
         pass
     yml = yml or {}
